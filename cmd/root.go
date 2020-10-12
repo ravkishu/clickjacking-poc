@@ -145,7 +145,8 @@ func init() {
 	rootCmd.PersistentFlags().StringVarP(&headerMessage, "header-message", "m", headerMessageDefault, "Message above the iframe")
 	viper.BindPFlag("header-message", rootCmd.PersistentFlags().Lookup("header-message"))
 
-	iframeStyleDefault := "width:90%%;height:90%%"
+	// iframeStyleDefault := "width:90%%;height:90%%"
+	iframeStyleDefault := "width:700px;height:550px"
 	rootCmd.PersistentFlags().StringVarP(&iframeStyle, "iframe-style", "i", iframeStyleDefault, "CSS style of the iframe")
 	viper.BindPFlag("iframe-style", rootCmd.PersistentFlags().Lookup("iframe-style"))
 
